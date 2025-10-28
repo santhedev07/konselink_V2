@@ -17,7 +17,7 @@
 </head>
 
 <body class="font-sans text-gray-900 antialiased">
-    <header class="min-w-screen bg-blue-900 h-fit">
+    <header class="min-w-screen bg-blue-900 max-h-24">
         <div class="navbar p-4 spacex-2 flex justify-between">
             <p class="text-white font-semibold italic items-center justify-center text-2xl">Konselink.v2</p>
             <div class="sm:flex sm:items-center sm:ms-6">
