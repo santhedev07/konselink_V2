@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\admin\AdminController;
-use App\Http\Controllers\AdminAdminController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\schoolDataController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Spatie\Permission\Models\Permission;
@@ -22,6 +22,7 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admins.')->group(function () {
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
+    Route::get('/dataSchool', [schoolDataController::class, 'index'])->name('schoolData');
 });
 
 require __DIR__.'/auth.php';
